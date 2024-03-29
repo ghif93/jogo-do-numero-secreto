@@ -3,7 +3,7 @@ titulo.innerHTML = 'Jogo do número secreto';
 
 document.querySelector('p').innerHTML = 'escolha um número entre 1 e 10'; */
 let listaDeNumerosSorteados = [];
-let limite = 50;
+let limite = 100;
 function exibirTextoNaTela(tag,texto){
     document.querySelector(tag).innerHTML = texto;
     responsiveVoice.speak(texto,'Brazilian Portuguese Female',{rate:1.2});
@@ -62,7 +62,7 @@ function limparCampo(){
 
 function exibirMensagemInicial(){
     exibirTextoNaTela('h1','Jogo do número secreto');
-    exibirTextoNaTela('p','escolha um número entre 1 e 50');
+    exibirTextoNaTela('p','escolha um número entre 1 e 100');
 }
 
 
